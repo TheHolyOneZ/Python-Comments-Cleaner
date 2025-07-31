@@ -13,9 +13,15 @@ These regex patterns are **better than most VS Code or VSCodium extensions** for
 ### Description:
 Deletes entire lines that contain only comments, including those with leading spaces.
 
+## 2. In-Line Comments
+
+### Regex Pattern:
+```regex
+(?<=\s)#\s+.*$
+```
 ---
 
-## 2. Trailing (Inline) Comments After Code
+## 3. Trailing (Inline) Comments After Code
 
 ### Regex Pattern:
 ```regex
@@ -27,7 +33,7 @@ Deletes comments that appear after code, but only if there are **at least two sp
 
 ---
 
-## 3. Strict Docstring Matching (One-Liner)
+## 4. Strict Docstring Matching (One-Liner)
 ### Regex Pattern:
 ```
 """[^"]+"""
